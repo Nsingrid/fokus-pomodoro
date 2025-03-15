@@ -172,6 +172,10 @@ h1, h2, h3, h4, h5, h6 {
     background: #010B15;
 }
 
+.app__footer  a {
+    color: var(--color-secondary)
+}
+
 .app__footer-text {
     color: rgba(182, 182, 182, 0.8);
     text-align: center;
@@ -248,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .app__title {
-        font-size: 2.6rem;
+        font-size: 3.5rem;
     }
 
     .app__card-timer {
