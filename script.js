@@ -72,16 +72,15 @@ function alterarContexto(contexto) {
     }
 }
 
-function contagemRegressiva() {
+const contagemRegressiva = () => {
     if (tempoDecorridoEmSegundos <= 0) {
-        clearInterval(intervaloId);
-        intervaloId = null;
-        iniciarOuPausarBt.textContent = "Começar";
-        pauseBt.src = "./imagens/play_arrow.png";
-        return;
+        audioFinalizar.play();
+        alert('Tempo finalizado!')
+        zerar()
+        return
     }
-    tempoDecorridoEmSegundos--;
-    mostrarTempo();
+    tempoDecorridoEmSegundos -= 1
+    mostrarTempo()
 }
 
 startPauseBt.addEventListener('click', iniciarOuPausar) 
